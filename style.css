@@ -1,0 +1,155 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%);
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 650px;
+	height: 350px;
+  display: flex;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-top: calc(100vh/3);
+}
+
+.column {
+  padding: 2.2rem;
+}
+
+.column img{
+  width: 2.7em;
+}
+
+.column > p:nth-of-type(1){
+color: white;
+text-transform: uppercase;
+font-size: 24px;
+padding-top: 1rem;
+font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.column > p:nth-of-type(2){
+	color: var(--Transparentwhite);
+	padding-top: 1.4rem;
+	padding-bottom: 3.4rem;
+	min-height: 25%;
+	font-size: 10px;
+	line-height: 1.1rem;
+	}
+	
+	.column button {
+		padding: 0.6rem;
+		border-radius: 50px;
+		font-size: 11px;
+		width: 70%;
+		border:none;
+		outline-style: solid;
+		outline-width:1px;
+		font-family: 'Lexend Deca', sans-serif;
+	}
+
+	.column:nth-child(1) button {
+		color: var(--Brightorange);
+	}
+
+	.column:nth-child(1) button:hover {
+		background-color: var(--Brightorange);
+		color: white;
+	}
+
+	.column:nth-child(2) button {
+		color: var(--Darkcyan);
+	}
+
+	.column:nth-child(2) button:hover {
+		background-color: var(--Darkcyan);
+		color:white;
+	}
+
+	.column:nth-child(3) button {
+		color: var(--Verydarkcyan);
+	}
+
+	.column:nth-child(3) button:hover {
+		background-color: var(--Verydarkcyan);
+		color:white;
+	}
+
+	.column:nth-child(3) button:hover {
+		background-color: var(--Verydarkcyan);;
+	}
+
+
+.column:nth-child(1){
+  background-color: var(--Brightorange);
+}
+
+.column:nth-child(2){
+  background-color: var(--Darkcyan);
+}
+
+.column:nth-child(3){
+  background-color: var(--Verydarkcyan);
+}
